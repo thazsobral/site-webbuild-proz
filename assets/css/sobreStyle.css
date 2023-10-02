@@ -4,12 +4,34 @@ body {
     align-items: center;
 }
 
-main {
+main div{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-main p {
+p {
     text-align: justify;
+    display: inline;
+}
+
+.content-with-image {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.content-with-image p {
+    display: inline;
+    width: 60%;
+}
+
+.content-with-image figure {
+    display: inline;
+    width: 25%;
+    margin: 1%;
+}
+
+.content-with-image figure img {
+    width: 100%;
 }
