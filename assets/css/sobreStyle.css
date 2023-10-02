@@ -4,34 +4,30 @@ body {
     align-items: center;
 }
 
-main div{
+main {
+    width: 75vw;
+    margin: 5vh 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-p {
-    text-align: justify;
-    display: inline;
+main .content figure {
+    margin: 0 0 1em 1em;
+    width: 15vw;
+    clear: right;
+    float: right;
 }
 
-.content-with-image {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.content-with-image p {
-    display: inline;
-    width: 60%;
-}
-
-.content-with-image figure {
-    display: inline;
-    width: 25%;
-    margin: 1%;
-}
-
-.content-with-image figure img {
+main .content figure img {
     width: 100%;
+}
+
+main .content figure figcaption {
+    font-size: .9rem;
+}
+
+main .content p {
+    text-align: justify;
+    margin: 1.5vh 0;
 }
