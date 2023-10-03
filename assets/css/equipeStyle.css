@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    width: 80vw;
+}
+
+main ul {
+    list-style: none;
+}
+
+main ul li {
+    margin: 5vh 0;
+    padding: 2vh;
+    border: 1px solid black;
+}
+
+main ul li section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main ul li section img {
+    width: 120px;
+    border-radius: 5px;
+    margin: 1%;
+}
