@@ -1,0 +1,39 @@
+main section:nth-child(1){
+    width: 100%;
+    background-color: white;
+    color: #005477;
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+}
+
+main section:nth-child(2){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: #3A9AF9;
+}
+
+.proposito_wb {
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    color: white;
+}
+
+.proposito_wb figure{
+    margin: 30px;
+}
+
+.parceiros_wb {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #f5f5f5;
+    padding: 50px;
+}
+.parceiros_wb figure img {
+    border-radius: 50%;
+}
