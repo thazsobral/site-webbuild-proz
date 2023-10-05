@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    color: var(--secondary);
+    margin: 5%
+}
+
+main ul {
+    list-style: none;
+}
+
+main ul li {
+    margin: 5vh 0;
+    padding: 2vh;
+    border: 3px solid var(--primary);
+    border-radius: 10px;
+    background-color: var(--primary);
+    color: white;
+}
+
+main ul li:hover {
+    transition: .5s;
+    background-color: white;
+    color: var(--primary);
+}
+
+main ul li section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main ul li section p {
+    font-size: larger;
+}
+
+main ul li section img {
+    width: 120px;
+    border-radius: 5px;
+    margin: 1%;
+}

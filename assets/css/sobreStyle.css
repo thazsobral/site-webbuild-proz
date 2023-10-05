@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    width: 75vw;
+    margin: 5vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .content figure {
+    margin: 0 0 1em 1em;
+    width: 15vw;
+    clear: right;
+    float: right;
+}
+
+main .content figure img {
+    width: 100%;
+}
+
+main .content figure figcaption {
+    font-size: .9rem;
+}
+
+main .content p {
+    text-align: justify;
+    margin: 1.5vh 0;
+}
