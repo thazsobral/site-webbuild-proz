@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../resources/images/logo-webuild.svg" sizes="16x16" type="image/png">
     <link rel="stylesheet" href="../assets/css/globalStyle.css">
-    <title>Contato</title>
+    <link rel="stylesheet" href="../assets/css/contatoStyle.css">
+    <title>.: Contato Webuild :.</title>
 </head>
 <body>
     <header>
@@ -32,28 +34,47 @@
         </nav>
     </header>
 
-    <img src="https://source.unsplash.com/800x100?fit=crop" alt="" width="100%">
+    <img class="banner-principal" src="../resources/images/contato.jpg" alt="" width="100%" height="400px">
 
-    <h1>FALE CONOSCO</h1>
-    <h2>Preencha os campos abaixo</h2>
-    <form action="">
-        <label for="nome">Nome</label> <br>
-        <input type="text" id="nome" name="nome" required> <br>
-        <label for="email">Email</label> <br>
-        <input type="email" id="email" name="email" required> <br>
-        <label for="telefone">Telefone</label> <br>
-        <input type="tel" id="telefone" name="telefone" required> <br>
-        <label for="assunto">Assunto</label> <br>
-        <input type="text" id="assunto" name="assunto" required> <br>
-        <label for="mensagem">Mensagem</label> <br>
-        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea> <br>
-        <input type="checkbox" name="termo" id="termo" required>
-        <label for="termo">Estou de acordo com as <a href="">políticas de privacidade</a></label> <br>
-        <button>ENVIAR</button>
-    </form>    
     
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d165510.08820371318!2d-46.52592350779372!3d-23.557997012914583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef5f799f89c6d%3A0x702bcb2e1ef45e7a!2sProz%20Educa%C3%A7%C3%A3o%20-%20Guarulhos!5e0!3m2!1spt-BR!2sbr!4v1695577411664!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+    <h1>FALE CONOSCO</h1>
+
+    <main>
+        <form action="">            
+            <h2>Preencha os campos abaixo</h2>
+            <div>
+                <label for="nome">Nome:</label> <br>
+                <input type="text" id="nome" name="nome" placeholder="ex: José Ricardo Silva" required><br>
+            </div>
+            <div>
+                <label for="email">Email:</label> <br>
+                <input type="email" id="email" name="email" placeholder="ex: meunome@email.com" required> <br>
+            </div>
+            <div>
+                <label for="telefone">Telefone:</label> <br>
+                <input type="tel" id="telefone" name="telefone" placeholder="ex: (99)9 9999-9999" required> <br>
+            </div>
+            <div>
+                <label for="assunto">Assunto:</label> <br>
+                <input type="text" id="assunto" name="assunto" placeholder="ex: Planos oferecidos" required> <br>
+            </div>
+            <div>
+                <label for="mensagem">Digite sua mensagem:</label> <br>
+                <textarea name="mensagem" id="mensagem" cols="60" rows="10"></textarea> <br>
+            </div>
+            <div class="politicas-privacidade">                
+                <label for="termo">Estou de acordo com as <a href="../politicas_de_privacidade.html" target="_blank">políticas de privacidade</a></label> <br>
+                <input type="checkbox" name="termo" id="termo" required>
+            </div>
+            
+            <button>ENVIAR</button>
+        </form>    
+        <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d165510.08820371318!2d-46.52592350779372!3d-23.557997012914583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef5f799f89c6d%3A0x702bcb2e1ef45e7a!2sProz%20Educa%C3%A7%C3%A3o%20-%20Guarulhos!5e0!3m2!1spt-BR!2sbr!4v1695577411664!5m2!1spt-BR!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="g-maps">
+            </iframe>
+        </div>
+    
+    </main>
 
     <footer>
         <div class="footer">

@@ -1,4 +1,21 @@
+.banner-principal {
+    max-height: 400px;
+}
+.banner-principal img{
+    object-fit: cover;
+    background-position: center;
+    position: relative;
+}
+
 main section:nth-child(1){
+    width: 100%;
+    background-color: white;
+    color: #005477;
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+}
+.sub-parceiros {
     width: 100%;
     background-color: white;
     color: #005477;
@@ -15,6 +32,51 @@ main section:nth-child(2){
     padding: 50px;
     background-color: #3A9AF9;
 }
+
+.proposito-sub {
+    text-align: center;
+    color: #005477;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+.propositos-article{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-shrink: 1;  
+    flex-wrap: wrap; 
+    box-sizing: border-box;
+    border-bottom: 1px solid #005477;    
+    width: 100%;
+    padding: 20px;
+}
+
+.propositos-article p {
+    font-size: 18px;
+}
+
+.propositos-article figure img{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    flex: 1 1 auto;
+    border: 1px solid #3A9AF9;
+    border-radius: 10px;
+}
+.propositos-article div{
+    padding: 20px;
+    flex: 1 1 50%;
+    min-height: 300px;
+    text-align: center;    
+    background-color: #005477;
+    border-radius: 10px;
+}
+.propositos-article div p {
+    color: white;
+    margin: 50px auto;
+}   
 
 .proposito_wb {
     width: 100%;
@@ -37,3 +99,10 @@ main section:nth-child(2){
 .parceiros_wb figure img {
     border-radius: 50%;
 }
+.parceiros_wb figure img:hover{
+    box-shadow: 5px 5px 5px black;
+    transition: .5s;
+}
+
+
+
