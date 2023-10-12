@@ -12,6 +12,22 @@ main {
     align-items: center;
 }
 
+main h1, h2 {
+    color: var(--secondary);
+    margin: 5%
+}
+
+main p {
+    font-size: 18px;
+    color: var(--secondary);
+}
+
+main p mark {
+    padding: 3px;
+    background-color: var(--secondary);
+    color: white;
+}
+
 main .content figure {
     margin: 0 0 1em 1em;
     width: 15vw;
@@ -31,3 +47,4 @@ main .content p {
     text-align: justify;
     margin: 1.5vh 0;
 }
+
