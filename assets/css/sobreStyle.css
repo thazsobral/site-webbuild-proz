@@ -17,8 +17,14 @@ main h1, h2 {
     margin: 5%
 }
 
+main figure figcaption {
+    color: var(--secondary);
+    font-style: italic;
+}
+
 main p {
     font-size: 18px;
+    font-weight: 500;
     color: var(--secondary);
 }
 
