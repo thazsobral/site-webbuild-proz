@@ -1,3 +1,5 @@
+@import url(./globalStyle.css);
+
 .banner-principal {
     max-height: 400px;
 }
@@ -6,6 +8,7 @@
     background-position: center;
     position: relative;
 }
+
 main {
     width: 100%;
     padding: 20px;

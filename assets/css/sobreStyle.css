@@ -1,3 +1,5 @@
+@import url(./globalStyle.css);
+
 body {
     display: flex;
     flex-direction: column;
@@ -6,6 +8,7 @@ body {
 
 main {
     width: 75vw;
+    max-width: var(--value-max-width);
     margin: 5vh 0;
     display: flex;
     flex-direction: column;
@@ -23,7 +26,6 @@ main figure figcaption {
 }
 
 main p {
-    font-size: 18px;
     font-weight: 500;
     color: var(--secondary);
 }
