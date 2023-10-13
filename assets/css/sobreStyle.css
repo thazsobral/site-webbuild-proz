@@ -55,3 +55,12 @@ main .content p {
     text-align: justify;
     margin: 1.5vh 0;
 }
+
+@media(max-width: 600px) {
+    main .content figure {
+        width: 100%;
+        margin: auto;
+        float: none;
+        clear: none;
+    }
+}
