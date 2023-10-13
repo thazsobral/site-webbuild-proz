@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../resources/images/logo-webuild.svg" sizes="16x16" type="image/png">
-    <link rel="stylesheet" href="../assets/css/globalStyle.css">
     <link rel="stylesheet" href="../assets/css/contatoStyle.css">
     <title>.: Contato Webuild :.</title>
 </head>
@@ -60,11 +59,11 @@
             </div>
             <div>
                 <label for="mensagem">Digite sua mensagem:</label> <br>
-                <textarea name="mensagem" id="mensagem" cols="60" rows="10"></textarea> <br>
+                <textarea name="mensagem" id="mensagem" cols="60" rows="10" required></textarea> <br>
             </div>
-            <div class="politicas-privacidade">                
+            <div id="politicas-privacidade">
+                <input type="checkbox" name="termo" id="termo" required>          
                 <label for="termo">Estou de acordo com as <a href="../politicas_de_privacidade.html" target="_blank">políticas de privacidade</a></label> <br>
-                <input type="checkbox" name="termo" id="termo" required>
             </div>
             
             <button>ENVIAR</button>
@@ -97,7 +96,7 @@
         </div>
         <div>
             <p>
-                © 2023 por Webbuild
+                © 2023 por WeBuild
             </p>
         </div>
     </footer>
