@@ -1,1 +1,50 @@
 @import url(./globalStyle.css);
+
+
+
+body {
+    max-width: var(--value-max-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main {
+    color: var(--secondary);
+    background-color:white;
+    width: 90vw;
+    text-align:justify;
+    margin: 5%;
+}
+
+main h1{
+font-size: 35px;
+margin: 1%;
+}
+
+main div h2{
+    font-size: 30px;
+    text-align: center;
+    margin: 2%;
+    
+}
+main div section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 3px solid var(--primary);
+    background-color: var(--primary);
+    border-radius: 10px;
+    color: white;
+    padding: 1%;
+}
+
+main div section img {
+    max-height: 300px;
+    width: 100%;
+    max-width: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5%;
+}
+    
