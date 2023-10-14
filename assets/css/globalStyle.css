@@ -103,6 +103,14 @@ header section img {
     }
 }
 
+/* banner */
+
+.banner {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+}
+
 /* Footer */
 footer {
     display: flex;
