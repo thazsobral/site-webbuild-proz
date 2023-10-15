@@ -108,6 +108,7 @@ main ul li section img {
         
     }
     .icons div {
-        margin-bottom: 20px;
+        margin-bottom: 20px;        
+        width: 250px;
     }
 }
