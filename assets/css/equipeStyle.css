@@ -20,11 +20,18 @@ main h1 {
 
 main ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
 }
 
 main ul li {
     margin: 5vh 0;
     padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    justify-content: center;
+    min-height: 400px;
     border: 3px solid var(--primary);
     border-radius: 10px;
     background-color: var(--primary);
@@ -40,15 +47,67 @@ main ul li:hover {
 main ul li section {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
 }
 
 main ul li section p {
     font-size: larger;
+    flex: 1 1 600px;
 }
 
 main ul li section img {
-    width: 120px;
+    width: 180px;
     border-radius: 5px;
     margin: 1%;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-around;    
+    align-items: center;
+}
+
+.icons div{
+    display: flex;
+    align-items: center;   
+    
+}
+
+.icons div a {
+    color: var(--secondary);
+    margin-left: 10px;
+    font-weight: 500;
+}
+.icons div a:hover{
+    text-decoration: underline;
+}
+
+.icons .logo-site {
+    font-size: 50px;
+    text-decoration: none;
+}
+
+/* responsividade */
+@media (max-width: 1024px){
+    ul li section:nth-child(1) {
+        display: flex;
+        justify-content: center;
+    }
+    .equipe-img {
+        margin-bottom: 20px;
+    }
+    .descricao-funcionario {
+        margin-bottom: 20px;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .icons div {
+        margin-bottom: 20px;
+    }
 }

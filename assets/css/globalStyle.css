@@ -23,7 +23,7 @@ body{
 /* header */
 
 header {
-    width: 100vw;
+    width: 100%;
     max-width: var(--value-max-width);
     display: flex;
     flex-wrap: wrap;
@@ -67,8 +67,7 @@ header nav ul li a {
     padding: 0px 15px;
 }
 
-header section {
-    width: 50vw;
+header section {    
     margin: 0 auto;
     flex-shrink: 1;
     flex-grow: 1;
