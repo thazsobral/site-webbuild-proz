@@ -93,11 +93,12 @@ main form button{
     border-radius: 10px;
 }
 
-#politicas-privacidade{
+#politicas-privacidade {
     display: inline-block;
     text-align: center;
     margin-bottom: 20px;
 }
+
 
 main form div input::placeholder{
     color: #005477;
@@ -165,8 +166,10 @@ main div #g-maps {
 }
 
 /* responsividade*/
+
 @media(max-width: 800px){
     .duvidas-f details {
         margin-bottom: 20px;
     }    
 }
+    
