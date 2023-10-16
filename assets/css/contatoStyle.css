@@ -53,6 +53,7 @@ main form div{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     flex-grow: 1;
     flex-shrink: 1;
 }
@@ -69,7 +70,7 @@ main form div label a {
 main form div textarea{
     border-radius: 10px;
     width: 80%;
-    min-width: 350px;
+    min-width: 380px;
     flex: 1 1 200px;
 }
 
@@ -87,8 +88,8 @@ main form button{
 .wb-input input{
     flex-grow: 1;
     flex-shrink: 1;
-    padding: 10px;
-    min-width: 350px;
+    padding: 10px;    
+    min-width: 380px;
     border-radius: 10px;
 }
 
@@ -161,14 +162,14 @@ main div #g-maps {
     font-weight: 500;
     border: 2px solid #005477;
     padding: 2%;
+    line-height: 36px;
 }
 
 /* responsividade*/
+
 @media(max-width: 800px){
     .duvidas-f details {
         margin-bottom: 20px;
-    }
-    .wb-input label{
-        display: none;
-    }
+    }    
 }
+    

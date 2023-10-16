@@ -54,6 +54,7 @@ main .content figure figcaption {
 main .content p {
     text-align: justify;
     margin: 1.5vh 0;
+    line-height: 36px;
 }
 
 @media(max-width: 600px) {
