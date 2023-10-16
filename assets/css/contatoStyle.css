@@ -93,6 +93,7 @@ main form div input{
     border-radius: 10px;
 }
 
+
 main form div input::placeholder{
     color: #005477;
 }
@@ -161,5 +162,5 @@ main div #g-maps {
 @media(max-width: 800px){
     .duvidas-f details {
         margin-bottom: 20px;
-    }
+    }   
 }
