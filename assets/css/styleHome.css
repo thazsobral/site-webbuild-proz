@@ -57,6 +57,7 @@ main section:nth-child(2){
 
 .propositos-article p {
     font-size: 18px;
+    line-height: 36px;
 }
 
 .propositos-article figure img{
@@ -69,7 +70,7 @@ main section:nth-child(2){
 }
 .propositos-article div{
     padding: 20px;
-    flex: 1 1 50%;
+    flex: 1 1 800px;
     min-height: 300px;
     text-align: center;    
     background-color: #005477;
@@ -116,5 +117,10 @@ main section:nth-child(2){
     
     .proposito_wb figure img {
         width: 40vw;
+    }
+    .parceiros_wb {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
