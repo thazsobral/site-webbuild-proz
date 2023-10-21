@@ -37,6 +37,7 @@ main form {
     align-items: center;
     flex: 1 1 400px;
     margin: 10px 20px 0;
+    /* margin: auto; */
     padding: 20px;
     background-color: #005477;
     border-radius: 10px;
@@ -53,10 +54,11 @@ main form div{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     flex-grow: 1;
     flex-shrink: 1;
 }
-
+ 
 main form div label{
     color: white;  
     font-weight: 500;      
@@ -66,16 +68,16 @@ main form div label a {
     color: #5CB8FF;
 }
 
-main form div textarea{
+main form div textarea {
     border-radius: 10px;
-    width: 80%;
-    min-width: 400px;
+    width: 90%;
+    /* min-width: 320px; */
     flex: 1 1 200px;
 }
 
 main form button{
     padding: 10px;
-    flex-grow: 1;
+    flex-grow: 1; 
     flex-wrap: 1;
     min-width: 70%;
     border-radius: 10px;
@@ -84,14 +86,21 @@ main form button{
     font-weight: 500;
 }
 
-main form div input{
+.wb-input input{
     flex-grow: 1;
     flex-shrink: 1;
     padding: 10px;
-    width: 50%;
-    min-width: 430px;
+    /* min-width: 320px; */
+    width: 90%;
     border-radius: 10px;
 }
+
+#politicas-privacidade {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 
 main form div input::placeholder{
     color: #005477;
@@ -155,11 +164,34 @@ main div #g-maps {
     font-weight: 500;
     border: 2px solid #005477;
     padding: 2%;
+    line-height: 36px;
 }
 
 /* responsividade*/
+
 @media(max-width: 800px){
     .duvidas-f details {
         margin-bottom: 20px;
     }
 }
+
+@media(max-width: 400px) {
+    main {
+        margin: 0;
+        padding: 0;
+    }
+
+    main form {
+        margin: 0;
+        font-size: .5rem;
+    }
+
+    main form input {
+        margin-bottom: 20px;
+    }
+
+    main div #g-maps {
+        height: 40vh;   
+    }
+}
+    

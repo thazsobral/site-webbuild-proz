@@ -54,6 +54,7 @@ main ul li section {
 main ul li section p {
     font-size: larger;
     flex: 1 1 600px;
+    line-height: 36px;
 }
 
 main ul li section img {
