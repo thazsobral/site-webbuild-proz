@@ -10,41 +10,120 @@ body {
     align-items: center;
 }
 main {
+    display: flex;
+    flex-direction:column;
     color: var(--secondary);
     background-color:white;
-    width: 90vw;
-    text-align:justify;
-    margin: 5%;
+    width: 90%;
 }
 
 main h1{
-font-size: 35px;
-margin: 1%;
+    font-size: 35px;
+    margin: 20px auto;
+}
+main article{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
 }
 
-main div h2{
-    font-size: 30px;
-    text-align: center;
-    margin: 2%;
-    
-}
-main div section{
+
+main article div{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction:column;
+    /*justify-content: center;*/
+    flex-wrap: wrap;
+    flex: 1 1 300px;
+    color: white;
     border: 3px solid var(--primary);
     background-color: var(--primary);
     border-radius: 10px;
+    margin: 1%;
+    /*text-align: justify;*/
+    
+}
+ main article div:hover{
+    transition: .5s;
+    background-color: white;
+    color: var(--primary);
+ }
+
+main article div section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     color: white;
     padding: 1%;
 }
 
-main div section img {
+main article div h2{
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+main article div section img{
     max-height: 300px;
     width: 100%;
-    max-width: 250px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 5%;
+    max-width: 300px;
+    margin: 20px;
+    border-radius: 10px;
 }
+main article div section p{
+    padding: 20px;
+    line-height: 36px;
+}
+main article div section p:hover{
+    color: var(--primary);
+}
+
+main .projetos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+
+   
+}  
+.projetos h2 {
+    margin: 20px auto;
+ }
+
+main .projetos div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+main .projetos div section{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    border: 3px solid var(--primary);
+    background-color: var(--primary);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 10px;
+    flex: 1 1 250px;
+
+}
+ main .projetos div section figure{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     
+ }
+ main .projetos div section figure img{
+    max-width: 250px;
+    max-height: 300px;
+
+ }
+ 
+ 
+
