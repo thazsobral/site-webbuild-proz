@@ -17,7 +17,8 @@ main {
 h1 {
     text-align: center;
     margin: 20px;
-    color: #007B8B;
+    color: var(--secondary);
+    font-size: 1.3rem;
     text-decoration: underline;
 }
 
@@ -47,6 +48,7 @@ main form h2{
     color: white;
     text-decoration: underline;
     margin-bottom: 10px;
+    font-size: 1.3rem;
 }
 
 main form div{
@@ -140,7 +142,8 @@ main div #g-maps {
 }
 .duvidas-f h2 {
     margin-bottom: 40px;
-    color: #007B8B;
+    color: var(--secondary);
+    font-size: 1.3rem;
     text-decoration: underline;
 }
 .duvidas-f details {

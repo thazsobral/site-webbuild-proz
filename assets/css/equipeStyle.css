@@ -15,7 +15,8 @@ main {
 
 main h1 {
     color: var(--secondary);
-    margin: 5%
+    margin: 5%;
+    font-size: 1.3rem;
 }
 
 main ul {
