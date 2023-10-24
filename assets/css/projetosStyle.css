@@ -112,20 +112,23 @@ main .projetos div section{
     flex: 1 1 250px;
 
 }
- main .projetos div section figure a{
+ main .projetos div section figure {
     color: white;
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
     flex-direction: column;
-    align-items: center;
-    text-decoration: none;
+    margin: 0 auto;
  }
 
- main .projetos div section figure a img{
+ main .projetos div section figure img{
     max-width: 250px;
     max-height: 300px;
 
  }
  
- 
+main .projetos div section figure figcaption a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
 
