@@ -17,6 +17,10 @@ main section:nth-child(1){
     font-size: 24px;
     padding: 20px;
 }
+
+main section h1 {
+    font-size: 1.3rem;
+}
 .sub-parceiros {
     width: 100%;
     background-color: white;
@@ -24,6 +28,10 @@ main section:nth-child(1){
     text-align: center;
     font-size: 24px;
     padding: 20px;
+}
+
+.sub-parceiros h2 {
+    font-size: 1.3rem;
 }
 
 main section:nth-child(2){
@@ -38,7 +46,7 @@ main section:nth-child(2){
 .proposito-sub {
     text-align: center;
     color: #005477;
-    font-size: 36px;
+    font-size: 1.3rem;
     margin-top: 20px;
 }
 
