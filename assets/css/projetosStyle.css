@@ -43,7 +43,7 @@ main article div{
     /*text-align: justify;*/
     
 }
- main article div:hover{
+ main article div section:hover{
     transition: .5s;
     background-color: white;
     color: var(--primary);
