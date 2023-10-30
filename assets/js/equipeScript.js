@@ -41,7 +41,7 @@ function populatePage() {
             <section class="icons">
                 <div>
                     <i class="fa-brands fa-square-github logo-site"></i>
-                    <a class="git-funcionario" href="https://github.com/${funcionarios[index].github}" target="_blank"><span>@${funcionarios[index.github]}</span></a>
+                    <a class="git-funcionario" href="https://github.com/${funcionarios[index].github}" target="_blank"><span>@${funcionarios[index].github}</span></a>
                 </div>
                 <div>
                     <i class="fa-brands fa-linkedin logo-site"></i>
