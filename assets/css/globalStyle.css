@@ -4,6 +4,7 @@
     --primary: #5CB8FF;
     --secondary: #005477;
     --value-max-width: 1920px;
+    font-size: 62.5%;
 }
 
 * {
@@ -12,7 +13,7 @@
     text-decoration: none;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.15rem;
+    font-size: 1.8rem;
 }
 
 body{
@@ -55,7 +56,7 @@ header nav ul li {
 }
 
 header nav ul li:hover {
-    font-size: 1.1rem;
+    font-size: 1.7rem;
     text-decoration: underline;
     font-weight: 500;
     color: white;
@@ -139,7 +140,7 @@ footer {
     margin: 30px 40px 10px;
 }
 .footer aside ul li a:hover{
-    font-size: 1.1rem;
+    font-size: 1.7rem;
     text-decoration: underline;
     font-weight: 500;
     color: white;

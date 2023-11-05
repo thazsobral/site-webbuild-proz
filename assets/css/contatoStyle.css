@@ -18,7 +18,7 @@ h1 {
     text-align: center;
     margin: 20px;
     color: var(--secondary);
-    font-size: 1.3rem;
+    font-size: 2.1rem;
     text-decoration: underline;
 }
 
@@ -48,7 +48,7 @@ main form h2{
     color: white;
     text-decoration: underline;
     margin-bottom: 10px;
-    font-size: 1.3rem;
+    font-size: 2.1rem;
 }
 
 main form div{
