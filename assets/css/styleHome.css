@@ -90,7 +90,7 @@ main section:nth-child(2){
 }   
 
 .proposito_wb {
-    width: 100vw;
+    max-width: 100vw;
     max-width: var(--value-max-width);
     flex-wrap: wrap;
     text-align: center;
