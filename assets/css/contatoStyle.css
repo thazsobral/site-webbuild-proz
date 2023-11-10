@@ -170,6 +170,50 @@ main div #g-maps {
     line-height: 36px;
 }
 
+#container-newsletter {
+    color: var(--secondary);
+    text-align: center;
+}
+
+#container-newsletter form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50vw;
+    padding: 2%;
+    margin: 2% auto;
+    background-color: var(--secondary);
+    border-radius: 10px;
+}
+
+#container-newsletter form * {
+    height: 5vh;
+}
+
+#container-newsletter form input {
+    width: 50%;
+    margin: 2% 0;
+    padding: 2%;
+    border-radius: 2px;
+    border: none;
+}
+
+#container-newsletter form button {
+    width: 40%;
+    background-color: #fff;
+    color: var(--secondary);
+    border: none;
+    border-radius: 5px;
+}
+
+#container-newsletter form button:hover {
+    cursor: pointer;
+    transition: .2s;
+    border: 1px solid var(--primary);
+    background-color: var(--secondary);
+    color: #fff;
+}
+
 /* responsividade*/
 
 @media(max-width: 800px){
