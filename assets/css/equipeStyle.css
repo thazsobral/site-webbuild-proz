@@ -85,32 +85,3 @@ main ul li section img {
 .icons div a:hover{
     text-decoration: underline;
 }
-
-.icons .logo-site {
-    font-size: 5rem;
-    text-decoration: none;
-}
-
-/* responsividade */
-@media (max-width: 1024px){
-    ul li section:nth-child(1) {
-        display: flex;
-        justify-content: center;
-    }
-    .equipe-img {
-        margin-bottom: 20px;
-    }
-    .descricao-funcionario {
-        margin-bottom: 20px;
-    }
-
-    .icons {
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .icons div {
-        margin-bottom: 20px;        
-        width: 250px;
-    }
-}
