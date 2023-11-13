@@ -1,7 +1,5 @@
 @import url(./globalStyle.css);
 
-
-
 body {
     max-width: var(--value-max-width);
     margin: 0 auto;
@@ -32,7 +30,6 @@ main article{
 main article div{
     display: flex;
     flex-direction:column;
-    /*justify-content: center;*/
     flex-wrap: wrap;
     flex: 1 1 300px;
     color: white;
@@ -40,7 +37,6 @@ main article div{
     background-color: var(--primary);
     border-radius: 10px;
     margin: 1%;
-    /*text-align: justify;*/
     
 }
  main article div section:hover{
@@ -131,4 +127,9 @@ main .projetos div section figure figcaption a{
     text-decoration: none;
     color: white;
     text-align: center;
+}
+
+main .projetos div section figure:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s;
 }
