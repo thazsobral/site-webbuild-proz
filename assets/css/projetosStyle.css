@@ -13,7 +13,7 @@ main {
     display: flex;
     flex-direction:column;
     color: var(--secondary);
-    background-color:white;
+    background-color:var(--white);
     width: 90%;
 }
 
@@ -32,20 +32,18 @@ main article{
 main article div{
     display: flex;
     flex-direction:column;
-    /*justify-content: center;*/
     flex-wrap: wrap;
     flex: 1 1 300px;
-    color: white;
+    color: var(--white);
     border: 3px solid var(--primary);
     background-color: var(--primary);
     border-radius: 10px;
     margin: 1%;
-    /*text-align: justify;*/
     
 }
  main article div section:hover{
     transition: .5s;
-    background-color: white;
+    background-color: var(--white);
     color: var(--primary);
  }
 
@@ -54,7 +52,7 @@ main article div section{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: white;
+    color: var(--white);
     padding: 1%;
 }
 
@@ -114,7 +112,7 @@ main .projetos div section{
 
 }
  main .projetos div section figure {
-    color: white;
+    color: var(--white);
     display: flex;
     justify-content:center;
     flex-direction: column;
@@ -129,7 +127,12 @@ main .projetos div section{
  
 main .projetos div section figure figcaption a{
     text-decoration: none;
-    color: white;
+    color: var(--white);
     text-align: center;
+}
+
+main .projetos div section figure:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s;
 }
 
