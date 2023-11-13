@@ -3,8 +3,6 @@
 :root {
     --primary: #5CB8FF;
     --secondary: #005477;
-    --white: #fff;
-    --mblue: #3A9AF9    
     --value-max-width: 1920px;
     font-size: 62.5%;
 }
@@ -32,7 +30,8 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(var(--mblue), var(--primary), var(--mblue) );
+    /*background-color: var(--primary);*/
+    background-image: linear-gradient(#3A9AF9, #5CB8FF, #3A9AF9 );
 }
 
 header nav {
@@ -52,7 +51,7 @@ header nav ul {
 
 header nav ul li {
     margin: 40px;
-    border-right: 1px solid var(--white);
+    border-right: 1px solid white;
     padding-right: 10px;
 }
 
@@ -60,12 +59,12 @@ header nav ul li:hover {
     font-size: 1.7rem;
     text-decoration: underline;
     font-weight: 500;
-    color: var(--white);
+    color: white;
     transition: 0.3s;
 }
 
 header nav ul li a {
-    color: var(--white);
+    color: #fff;
     padding: 0px 15px;
 }
 
@@ -137,20 +136,20 @@ footer {
 }
 
 .footer aside ul li a {
-    color: var(--white);
+    color: white;
     margin: 30px 40px 10px;
 }
 .footer aside ul li a:hover{
     font-size: 1.7rem;
     text-decoration: underline;
     font-weight: 500;
-    color: var(--white);
+    color: white;
 }
 
 footer div p {
     height: 40px;
     width: 100%;
-    color: var(--white);
+    color: white;
 }
 
 .footer img{

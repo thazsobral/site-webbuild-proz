@@ -34,7 +34,7 @@ main p {
 main p mark {
     padding: 3px;
     background-color: var(--secondary);
-    color: var(--white);
+    color: white;
 }
 
 main .content figure {

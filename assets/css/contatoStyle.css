@@ -1,5 +1,14 @@
 @import url(./globalStyle.css);
 
+/* .banner-principal {
+    max-height: 400px;
+} */
+/* .banner-principal img{
+    object-fit: cover;
+    background-position: center;
+    position: relative;
+} */
+
 main {
     width: 100%;
     padding: 20px;
@@ -23,7 +32,7 @@ main {
 }
 
 main form {
-    border: 1px solid var(--secondary);
+    border: 1px solid #005477;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,12 +40,12 @@ main form {
     margin: 10px 20px 0;
     /* margin: auto; */
     padding: 20px;
-    background-color: var(--secondary);
+    background-color: #005477;
     border-radius: 10px;
 }
 
 main form h2{
-    color: var(--white);
+    color: white;
     text-decoration: underline;
     margin-bottom: 10px;
     font-size: 2.1rem;
@@ -53,7 +62,7 @@ main form div{
 }
  
 main form div label{
-    color: var(--white);  
+    color: white;  
     font-weight: 500;      
 }
 
@@ -63,7 +72,8 @@ main form div label a {
 
 main form div textarea {
     border-radius: 10px;
-    width: 90%;    
+    width: 90%;
+    /* min-width: 320px; */
     flex: 1 1 200px;
 }
 
@@ -73,8 +83,8 @@ main form button{
     flex-wrap: 1;
     min-width: 70%;
     border-radius: 10px;
-    background-color: var(--mblue);
-    color: var(--white);
+    background-color: #3A9AF9;
+    color: white;
     font-weight: 500;
 }
 
@@ -82,6 +92,7 @@ main form button{
     flex-grow: 1;
     flex-shrink: 1;
     padding: 10px;
+    /* min-width: 320px; */
     width: 90%;
     border-radius: 10px;
 }
@@ -94,7 +105,7 @@ main form button{
 
 
 main form div input::placeholder{
-    color: var(--secondary);
+    color: #005477;
 }
 
 .maps {  
@@ -103,7 +114,7 @@ main form div input::placeholder{
     justify-content: center;  
     background-color: #f5f5f5;
     border-radius: 10px;
-    border: 1px solid var(--secondary);
+    border: 1px solid #005477;
     flex-grow: 0.5;
     flex-shrink: 1;    
     width: 50vw;    
@@ -142,19 +153,19 @@ main div #g-maps {
 
 .duvidas-f details summary {
     width: 100%;
-    background-color: var(--mblue);
+    background-color: #3A9AF9;
     padding: 2%;
-    border: 2px solid var(--secondary);
-    color: var(--white);
+    border: 2px solid #005477;
+    color: #fff;
     font-weight: 500;
 }
 
 .duvidas-f details p{
     width: 100%;
-    background-color: var(--white);
-    color: var(--mblue);
+    background-color: #fff;
+    color: #3A9AF9;
     font-weight: 500;
-    border: 2px solid var(--secondary);
+    border: 2px solid #005477;
     padding: 2%;
     line-height: 36px;
 }
@@ -189,7 +200,7 @@ main div #g-maps {
 
 #container-newsletter form button {
     width: 40%;
-    background-color: var(--white);
+    background-color: #fff;
     color: var(--secondary);
     border: none;
     border-radius: 5px;
@@ -200,7 +211,7 @@ main div #g-maps {
     transition: .2s;
     border: 1px solid var(--primary);
     background-color: var(--secondary);
-    color: var(--white);
+    color: #fff;
 }
 
 /* responsividade*/
