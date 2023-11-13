@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../resources/images/logo/WB.png" sizes="16x16" type="image/png">
     <link rel="stylesheet" href="../assets/css/contatoStyle.css">
-    <script src="../assets/js/validacaoFormScript.js" defer></script>
     <title>.: Contato Webuild :.</title>
 </head>
 <body>
@@ -43,23 +42,23 @@
             <h2>Preencha os campos abaixo</h2>
             <div class="wb-input">
                 <label for="nome">Nome:</label> <br>
-                <input class="form-input" type="text" id="nome" name="nome" placeholder="Nome: José Ricardo Silva" required autocomplete="cc-name"><br>
+                <input type="text" id="nome" name="nome" placeholder="Nome: José Ricardo Silva" required><br>
             </div>
             <div class="wb-input">
                 <label for="email">Email:</label> <br>
-                <input class="form-input" type="email" id="email" name="email" placeholder="Email: meunome@email.com" required autocomplete="email"> <br>
+                <input type="email" id="email" name="email" placeholder="Email: meunome@email.com" required> <br>
             </div>
             <div class="wb-input">
                 <label for="telefone">Telefone:</label> <br>
-                <input class="form-input" type="tel" id="telefone" name="telefone" placeholder="Telefone: (99)9 9999-9999" required autocomplete="tel"> <br>
+                <input type="tel" id="telefone" name="telefone" placeholder="Telefone: (99)9 9999-9999" required> <br>
             </div>
             <div class="wb-input">
                 <label for="assunto">Assunto:</label> <br>
-                <input class="form-input" type="text" id="assunto" name="assunto" placeholder="Sua dúvida: Serviços oferecidos" required> <br>
+                <input type="text" id="assunto" name="assunto" placeholder="Sua dúvida: Serviços oferecidos" required> <br>
             </div>
             <div class="wb-input">
                 <label for="mensagem">Digite sua mensagem:</label> <br>
-                <textarea name="mensagem" id="mensagem" cols="50" rows="10" required></textarea> <br>
+                <textarea name="mensagem" id="mensagem" cols="50" rows="10"></textarea> <br>
             </div>
             <div id="politicas-privacidade">
                 <input type="checkbox" name="termo" id="termo" required>          
@@ -110,21 +109,6 @@
             <summary>QUAIS SERVIÇOS DE MARKETING SÃO OFERECIDOS?</summary>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus repellendus quia culpa. Cum itaque ducimus fugit error et porro in harum neque asperiores quasi accusantium quidem ipsam quod, tenetur eum.</p>
         </details>
-    </section>
-
-    <section id="container-newsletter">
-        <h1>
-            Mantenha-se conectado com a gente ...
-        </h1>
-        <p>
-            Se increva na nossa Newsletter!!
-        </p>
-        <form action="#">
-            <input type="email" name="email-newsletter" id="email-newsletter" placeholder="coloque seu melhor aqui" required autocomplete="email" />
-            <button type="submit">
-                Inscrever-se
-            </button>
-        </form>
     </section>
 
     <footer>
