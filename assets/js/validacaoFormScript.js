@@ -7,6 +7,7 @@ for (let index = 0; index < inputsForm.length; index++) {
             inputsForm[index].style.backgroundColor = "red";
         } else {
             inputsForm[index].style.backgroundColor = "#fff";
+            inputsForm[index].setAttribute.placeh = "default";
         }
     });
 }

@@ -23,20 +23,19 @@ main {
 }
 
 main form {
-    border: 1px solid #005477;
+    border: 1px solid var(--secondary);
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1 1 400px;
     margin: 10px 20px 0;
-    /* margin: auto; */
     padding: 20px;
-    background-color: #005477;
+    background-color: var(--secondary);
     border-radius: 10px;
 }
 
 main form h2{
-    color: white;
+    color: var(--light);
     text-decoration: underline;
     margin-bottom: 10px;
     font-size: 2.1rem;
@@ -53,7 +52,7 @@ main form div{
 }
  
 main form div label{
-    color: white;  
+    color: var(--light);  
     font-weight: 500;      
 }
 
@@ -73,8 +72,9 @@ main form button{
     flex-wrap: 1;
     min-width: 70%;
     border-radius: 10px;
-    background-color: #3A9AF9;
-    color: white;
+    border: none;
+    background-color: var(--primary);
+    color: var(--light);
     font-weight: 500;
 }
 
@@ -94,16 +94,16 @@ main form button{
 
 
 main form div input::placeholder{
-    color: #005477;
+    color: var(--secondary);
 }
 
 .maps {  
     display: flex;
     align-items: center;
     justify-content: center;  
-    background-color: #f5f5f5;
+    background-color: var(--light);
     border-radius: 10px;
-    border: 1px solid #005477;
+    border: 1px solid var(--secondary);
     flex-grow: 0.5;
     flex-shrink: 1;    
     width: 50vw;    
@@ -142,19 +142,19 @@ main div #g-maps {
 
 .duvidas-f details summary {
     width: 100%;
-    background-color: #3A9AF9;
+    background-color: var(--primary);
     padding: 2%;
-    border: 2px solid #005477;
-    color: #fff;
+    border: 2px solid var(--secondary);
+    color: var(--light);
     font-weight: 500;
 }
 
 .duvidas-f details p{
     width: 100%;
-    background-color: #fff;
-    color: #3A9AF9;
+    background-color: var(--light);
+    color: var(--primary);
     font-weight: 500;
-    border: 2px solid #005477;
+    border: 2px solid var(--secondary);
     padding: 2%;
     line-height: 36px;
 }
@@ -189,7 +189,7 @@ main div #g-maps {
 
 #container-newsletter form button {
     width: 40%;
-    background-color: #fff;
+    background-color: var(--light);
     color: var(--secondary);
     border: none;
     border-radius: 5px;
@@ -200,7 +200,7 @@ main div #g-maps {
     transition: .2s;
     border: 1px solid var(--primary);
     background-color: var(--secondary);
-    color: #fff;
+    color: var(--light);
 }
 
 /* responsividade*/
