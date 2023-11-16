@@ -7,19 +7,21 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 main {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     color: var(--secondary);
-    background-color:var(--light);
+    background-color: var(--light);
     width: 90%;
 }
 
-main h1{
+main h1 {
     font-size: 2.1rem;
     margin: 20px auto;
 }
-main article{
+
+main article {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -27,9 +29,9 @@ main article{
 }
 
 
-main article div{
+main article div {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     flex-wrap: wrap;
     flex: 1 1 300px;
     color: var(--light);
@@ -37,15 +39,16 @@ main article div{
     background-color: var(--primary);
     border-radius: 10px;
     margin: 1%;
-    
+
 }
- main article div section:hover{
+
+main article div section:hover {
     transition: .5s;
     --dark-color: var(--light);
     color: var(--primary);
- }
+}
 
-main article div section{
+main article div section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,24 +57,26 @@ main article div section{
     padding: 1%;
 }
 
-main article div h2{
+main article div h2 {
     padding: 20px;
     text-align: center;
     font-size: 2.1rem;
 }
 
-main article div section img{
+main article div section img {
     max-height: 300px;
     width: 100%;
     max-width: 300px;
     margin: 20px;
     border-radius: 10px;
 }
-main article div section p{
+
+main article div section p {
     padding: 20px;
     line-height: 36px;
 }
-main article div section p:hover{
+
+main article div section p:hover {
     color: var(--primary);
 }
 
@@ -81,15 +86,14 @@ main .projetos {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
+}
 
-   
-}  
 .projetos h2 {
     margin: 20px auto;
     font-size: 2.1rem;
- }
+}
 
-main .projetos div{
+main .projetos div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -97,33 +101,33 @@ main .projetos div{
 
 }
 
-main .projetos div section{
+main .projetos div section {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: wrap;
     border: 3px solid var(--primary);
     background-color: var(--primary);
     border-radius: 10px;
-    p--darkadding: 10px;
+    padding: 10px;
     margin: 20px 10px;
     flex: 1 1 250px;
-
 }
- main .projetos div section figure {
+
+main .projetos div section figure {
     color: var(--light);
     display: flex;
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
     margin: 0 auto;
- }
+}
 
- main .projetos div section figure img{
+main .projetos div section figure img {
     max-width: 250px;
     max-height: 300px;
 
- }
- 
-main .projetos div section figure figcaption a{
+}
+
+main .projetos div section figure figcaption a {
     text-decoration: none;
     color: var(--light);
     text-align: center;
@@ -132,4 +136,8 @@ main .projetos div section figure figcaption a{
 main .projetos div section figure:hover img {
     transform: scale(1.1);
     transition: transform 0.3s;
+}
+
+.banner {
+    background-image: url("../../resources/images/banners/banner-projetos.jpg");
 }

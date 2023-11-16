@@ -1,0 +1,143 @@
+@import url(./globalStyle.css);
+
+.banner-principal {
+    max-height: 400px;
+}
+
+.banner-principal img {
+    object-fit: cover;
+    background-position: center;
+    position: relative;
+}
+
+main section:nth-child(1) {
+    width: 100%;
+    background-color: var(--light);
+    color: var(--secondary);
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 20px;
+}
+
+main section h1 {
+    font-size: 2.1rem;
+}
+
+.sub-parceiros {
+    width: 100%;
+    background-color: var(--light);
+    color: var(--secondary);
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 20px;
+}
+
+.sub-parceiros h2 {
+    font-size: 2.1rem;
+}
+
+main section:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: var(--primary);
+}
+
+.proposito-sub {
+    text-align: center;
+    color: var(--secondary);
+    font-size: 2.1rem;
+    margin-top: 20px;
+}
+
+.propositos-article {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--secondary);
+    width: 100%;
+    padding: 20px;
+}
+
+.propositos-article p {
+    font-size: 1.8rem;
+    line-height: 36px;
+}
+
+.propositos-article figure img {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    flex: 1 1 auto;
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+}
+
+.propositos-article div {
+    padding: 20px;
+    flex: 1 1 800px;
+    min-height: 300px;
+    text-align: center;
+    background-color: var(--secondary);
+    border-radius: 10px;
+}
+
+.propositos-article div p {
+    color: var(--light);
+    margin: 50px auto;
+}
+
+.proposito_wb {
+    max-width: 100vw;
+    max-width: var(--value-max-width);
+    flex-wrap: wrap;
+    text-align: center;
+    color: var(--light);
+}
+
+.proposito_wb figure {
+    margin: 30px;
+}
+
+.parceiros_wb {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: var(--light);
+    padding: 50px;
+}
+
+.parceiros_wb figure img {
+    border-radius: 50%;
+}
+
+.parceiros_wb figure img:hover {
+    box-shadow: 5px 5px 5px black;
+    transition: .5s;
+}
+
+.banner {
+    background-image: url("../../resources/images/banners/banner-home.jpg");
+}
+
+@media(max-width: 600px) {
+    .proposito_wb figure {
+        margin: auto;
+    }
+
+    .proposito_wb figure img {
+        width: 40vw;
+    }
+
+    .parceiros_wb {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
