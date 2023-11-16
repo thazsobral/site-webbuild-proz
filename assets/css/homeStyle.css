@@ -1,6 +1,6 @@
 @import url(./globalStyle.css);
 
-.banner-principal {
+/* .banner-principal {
     max-height: 400px;
 }
 
@@ -8,12 +8,12 @@
     object-fit: cover;
     background-position: center;
     position: relative;
-}
+} */
 
 main section:nth-child(1) {
     width: 100%;
-    background-color: var(--light);
-    color: var(--secondary);
+    background-color: var(--light-white);
+    color: var(--light-secondary);
     text-align: center;
     font-size: 2.4rem;
     padding: 20px;
@@ -25,8 +25,8 @@ main section h1 {
 
 .sub-parceiros {
     width: 100%;
-    background-color: var(--light);
-    color: var(--secondary);
+    background-color: var(--light-white);
+    color: var(--light-secondary);
     text-align: center;
     font-size: 2.4rem;
     padding: 20px;
@@ -42,12 +42,12 @@ main section:nth-child(2) {
     align-items: center;
     flex-wrap: wrap;
     padding: 50px;
-    background-color: var(--primary);
+    background-color: var(--light-primary);
 }
 
 .proposito-sub {
     text-align: center;
-    color: var(--secondary);
+    color: var(--light-secondary);
     font-size: 2.1rem;
     margin-top: 20px;
 }
@@ -60,7 +60,7 @@ main section:nth-child(2) {
     flex-shrink: 1;
     flex-wrap: wrap;
     box-sizing: border-box;
-    border-bottom: 1px solid var(--secondary);
+    border-bottom: 1px solid var(--light-secondary);
     width: 100%;
     padding: 20px;
 }
@@ -70,13 +70,18 @@ main section:nth-child(2) {
     line-height: 36px;
 }
 
-.propositos-article figure img {
+.propositos-article figure {
     width: 300px;
+    max-width: 300px;
     height: 300px;
+    max-width: 300px;
     margin: 10px;
     flex: 1 1 auto;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--light-primary);
     border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .propositos-article div {
@@ -84,12 +89,12 @@ main section:nth-child(2) {
     flex: 1 1 800px;
     min-height: 300px;
     text-align: center;
-    background-color: var(--secondary);
+    background-color: var(--light-secondary);
     border-radius: 10px;
 }
 
 .propositos-article div p {
-    color: var(--light);
+    color: var(--light-white);
     margin: 50px auto;
 }
 
@@ -98,7 +103,7 @@ main section:nth-child(2) {
     max-width: var(--value-max-width);
     flex-wrap: wrap;
     text-align: center;
-    color: var(--light);
+    color: var(--light-white);
 }
 
 .proposito_wb figure {
@@ -109,7 +114,7 @@ main section:nth-child(2) {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: var(--light);
+    background-color: var(--light-white);
     padding: 50px;
 }
 
@@ -124,6 +129,18 @@ main section:nth-child(2) {
 
 .banner {
     background-image: url("../../resources/images/banners/banner-home.jpg");
+}
+
+#img-transparencia {
+    background-image: url("./../../resources/images/valores/transparencia-conteudo.jpg");
+}
+
+#img-foco-no-cliente {
+    background-image: url("./../../resources/images/valores/foconocliente-1200x900.webp");
+}
+
+#img-inovacao {
+    background-image: url("./../../resources/images/valores/tecnologia-e-inovacao-1200x660.jpg");
 }
 
 @media(max-width: 600px) {

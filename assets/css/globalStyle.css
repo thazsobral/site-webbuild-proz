@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --primary: #5CB8FF;
-    --secondary: #005477;
-    --dark: #000;
-    --light: #fff;
+    --light-primary: #5CB8FF;
+    --light-secondary: #005477;
+    --light-black: #000;
+    --light-white: #fff;
+
+    /* --dark-primary: #5CB8FF;
+    --dark-secondary: #005477;
+    --dark-black: #000;
+    --dark-white: #fff; */
 
     --value-max-width: 1920px;
     font-size: 62.5%;
@@ -53,20 +58,20 @@ header nav ul {
 
 header nav ul li {
     margin: 40px;
-    border-right: 1px solid var(--light);
+    border-right: 1px solid var(--light-white);
     padding-right: 10px;
 }
 
 header nav ul li:hover {
-    font-size: 1.7rem;
+    /* font-size: 1.7rem; */
     text-decoration: underline;
-    font-weight: 500;
-    color: var(--light);
+    /* font-weight: 500; */
+    color: var(--light-white);
     transition: 0.3s;
 }
 
 header nav ul li a {
-    color: var(--light);
+    color: var(--light-white);
     padding: 0px 15px;
 }
 
@@ -103,7 +108,7 @@ footer {
     align-items: center;
     width: 100%;
     padding: 10px;
-    background-color: var(--secondary);
+    background-color: var(--light-secondary);
 }
 
 .footer {
@@ -121,21 +126,21 @@ footer {
 }
 
 .footer aside ul li a {
-    color: var(--light);
+    color: var(--light-white);
     margin: 30px 40px 10px;
 }
 
 .footer aside ul li a:hover {
-    font-size: 1.7rem;
+    /* font-size: 1.7rem; */
     text-decoration: underline;
     font-weight: 500;
-    color: var(--light);
+    color: var(--light-white);
 }
 
 footer div p {
     height: 40px;
     width: 100%;
-    color: var(--light);
+    color: var(--light-white);
 }
 
 .footer img {
