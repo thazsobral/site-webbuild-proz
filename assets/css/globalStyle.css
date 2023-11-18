@@ -9,19 +9,19 @@
     --dark-text-color: #005477;
     --light-text-color: #ffffff;
 
-    /* --primary-color: #5CB8FF;
-    --secondary-color: #005477;
-    --third-color: #158de9;
-    --dark-color: #e4e3e3;
-    --light-color: #242424; */
-
     --value-max-width: 1920px;
     font-size: 62.5%;
 }
 
-/* .dark {
-
-} */
+.dark {
+    --primary-color: #005fa8;
+    --secondary-color: #003a53;
+    --third-color: #0a4069;
+    --dark-color: #b1b1b1;
+    --light-color: #192433;
+    --dark-text-color: #00b3ff;
+    --light-text-color: #ffffff;
+}
 
 * {
     margin: 0;
@@ -67,7 +67,7 @@ header nav ul {
 
 header nav ul li {
     margin: 40px;
-    border-right: 1px solid var(--light-color);
+    border-right: 1px solid var(--light-text-color);
     padding-right: 10px;
 }
 
@@ -99,10 +99,19 @@ header section img {
     margin-left: 20px;
 }
 
+/* darkmode button */
+
+#btn-darkmode {
+    color: var(--light-text-color);
+    font-size: larger;
+    cursor: pointer;
+}
+
 /* banner */
 
 .banner {
     width: 100vw;
+    max-width: var(--value-max-width);
     height: 25vh;
     background-attachment: fixed;
     background-position: bottom;
