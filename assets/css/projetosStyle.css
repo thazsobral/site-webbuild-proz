@@ -37,7 +37,6 @@ main article div {
     background-color: var(--primary-color);
     border-radius: 10px;
     margin: 1%;
-
 }
 
 main article div section:hover {
@@ -93,7 +92,6 @@ main .projetos div {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
-
 }
 
 main .projetos div section {

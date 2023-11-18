@@ -22,7 +22,7 @@ const funcionarios = [
         github: "BrunoAlves95",
         linkedin: "bruno-alves-cordeiro",
         facebook: "bruno.alvescordeiro"
-    }  
+    }
 ];
 
 function populatePage() {
@@ -30,7 +30,7 @@ function populatePage() {
 
     for (let index = 0; index < funcionarios.length; index++) {
         listaFuncionarios.innerHTML +=
-        `
+            `
         <li>
             <section>
                 <img src="../resources/images/equipe/${funcionarios[index].img}" alt="" width="20%" class="equipe-img">

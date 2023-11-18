@@ -72,9 +72,7 @@ header nav ul li {
 }
 
 header nav ul li:hover {
-    /* font-size: 1.7rem; */
     text-decoration: underline;
-    /* font-weight: 500; */
     color: var(--light-text-color);
     transition: 0.3s;
 }
@@ -149,9 +147,7 @@ footer {
 }
 
 .footer aside ul li a:hover {
-    /* font-size: 1.7rem; */
     text-decoration: underline;
-    /* font-weight: 500; */
     color: var(--light-text-color);
 }
 

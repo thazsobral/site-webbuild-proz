@@ -5,12 +5,6 @@ main {
     padding: 20px;
 }
 
-/* 
-main {
-    display: flex;
-    flex-direction: column;
-} */
-
 main {
     display: flex;
     width: 100%;
@@ -99,7 +93,6 @@ main form button:hover {
     padding: 10px;
     width: 90%;
     border-radius: 10px;
-    /* box-shadow: 0 0 15px rgb(255, 0, 0); */
 }
 
 #politicas-privacidade {
@@ -141,7 +134,6 @@ main section #g-maps {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* margin-top: 40px; */
     margin-bottom: 40px;
     width: 100%;
 }
@@ -155,7 +147,6 @@ main section #g-maps {
 
 .duvidas-f details {
     width: 97%;
-    /* margin-bottom: 1px; */
 }
 
 .duvidas-f details summary {
@@ -178,7 +169,6 @@ main section #g-maps {
     padding: 2%;
     line-height: 36px;
     border-radius: 0 0 10px 10px;
-    /* margin-bottom: .25%; */
 }
 
 #container-newsletter {

@@ -1,15 +1,5 @@
 @import url(./globalStyle.css);
 
-/* .banner-principal {
-    max-height: 400px;
-}
-
-.banner-principal img {
-    object-fit: cover;
-    background-position: center;
-    position: relative;
-} */
-
 main section:nth-child(1) {
     width: 100%;
     background-color: var(--light-color);

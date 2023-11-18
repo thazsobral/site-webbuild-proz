@@ -16,9 +16,9 @@ elementDarkModeEnabled.addEventListener("click", (e) => {
 function changeTheme(element, enabled) {
     element.classList.toggle("dark");
     darkModeEnabled = !darkModeEnabled;
-    localStorage.setItem("dark", enabled)
+    localStorage.setItem("dark", enabled);
 }
 
-if(localStorage.getItem("dark") === "true") {
-    changeTheme(elementBody, "true")
+if (localStorage.getItem("dark") === "true") {
+    changeTheme(elementBody, "true");
 }
