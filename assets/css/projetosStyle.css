@@ -11,8 +11,8 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    color: var(--secondary);
-    background-color: var(--white);
+    color: var(--dark-text-color);
+    background-color: var(--light-color);
     width: 90%;
 }
 
@@ -25,18 +25,16 @@ main article {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
 }
-
 
 main article div {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     flex: 1 1 300px;
-    color: var(--white);
-    border: 3px solid var(--primary);
-    background-color: var(--primary);
+    color: var(--light-text-color);
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
     border-radius: 10px;
     margin: 1%;
 
@@ -44,8 +42,8 @@ main article div {
 
 main article div section:hover {
     transition: .5s;
-    --dark-color: var(--white);
-    color: var(--primary);
+    background-color: var(--light-color);
+    color: var(--primary-color);
 }
 
 main article div section {
@@ -53,7 +51,7 @@ main article div section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: var(--white);
+    color: var(--light-text-color);
     padding: 1%;
 }
 
@@ -74,10 +72,7 @@ main article div section img {
 main article div section p {
     padding: 20px;
     line-height: 36px;
-}
-
-main article div section p:hover {
-    color: var(--primary);
+    text-align: center;
 }
 
 main .projetos {
@@ -105,8 +100,8 @@ main .projetos div section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 3px solid var(--primary);
-    background-color: var(--primary);
+    border: 3px solid var(--primary-color);
+    background-color: var(--primary-color);
     border-radius: 10px;
     padding: 10px;
     margin: 20px 10px;
@@ -114,7 +109,7 @@ main .projetos div section {
 }
 
 main .projetos div section figure {
-    color: var(--white);
+    color: var(--light-text-color);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -124,12 +119,11 @@ main .projetos div section figure {
 main .projetos div section figure img {
     max-width: 250px;
     max-height: 300px;
-
 }
 
 main .projetos div section figure figcaption a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--light-text-color);
     text-align: center;
 }
 

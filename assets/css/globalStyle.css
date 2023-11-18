@@ -1,23 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --primary: #5CB8FF;
-    --secondary: #005477;
-    --third: #158de9;
-    --black: #000;
-    --white: #fff;
+    --primary-color: #5CB8FF;
+    --secondary-color: #005477;
+    --third-color: #158de9;
+    --dark-color: #000000;
+    --light-color: #ffffff;
+    --dark-text-color: #005477;
+    --light-text-color: #ffffff;
+
+    /* --primary-color: #5CB8FF;
+    --secondary-color: #005477;
+    --third-color: #158de9;
+    --dark-color: #e4e3e3;
+    --light-color: #242424; */
 
     --value-max-width: 1920px;
     font-size: 62.5%;
 }
 
-.dark {
-    --primary: #5CB8FF;
-    --secondary: #005477;
-    --third: #158de9;
-    --black: #ffffff;
-    --white: #000000;
-}
+/* .dark {
+
+} */
 
 * {
     margin: 0;
@@ -31,7 +35,7 @@
 body {
     max-width: var(--value-max-width);
     margin: 0 auto;
-    background-color: var(--white);
+    background-color: var(--light-color);
 }
 
 /* header */
@@ -43,7 +47,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(var(--third), var(--primary), var(--third));
+    background-image: linear-gradient(var(--third-color), var(--primary-color), var(--third-color));
 }
 
 header nav {
@@ -63,7 +67,7 @@ header nav ul {
 
 header nav ul li {
     margin: 40px;
-    border-right: 1px solid var(--white);
+    border-right: 1px solid var(--light-color);
     padding-right: 10px;
 }
 
@@ -71,12 +75,12 @@ header nav ul li:hover {
     /* font-size: 1.7rem; */
     text-decoration: underline;
     /* font-weight: 500; */
-    color: var(--white);
+    color: var(--light-text-color);
     transition: 0.3s;
 }
 
 header nav ul li a {
-    color: var(--white);
+    color: var(--light-text-color);
     padding: 0px 15px;
 }
 
@@ -113,7 +117,7 @@ footer {
     align-items: center;
     width: 100%;
     padding: 10px;
-    background-color: var(--secondary);
+    background-color: var(--secondary-color);
 }
 
 .footer {
@@ -131,21 +135,21 @@ footer {
 }
 
 .footer aside ul li a {
-    color: var(--white);
+    color: var(--light-text-color);
     margin: 30px 40px 10px;
 }
 
 .footer aside ul li a:hover {
     /* font-size: 1.7rem; */
     text-decoration: underline;
-    font-weight: 500;
-    color: var(--white);
+    /* font-weight: 500; */
+    color: var(--light-text-color);
 }
 
 footer div p {
     height: 40px;
     width: 100%;
-    color: var(--white);
+    color: var(--light-text-color);
 }
 
 .footer img {

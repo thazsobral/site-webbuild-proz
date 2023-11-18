@@ -14,7 +14,7 @@ main {
 }
 
 main h1 {
-    color: var(--primary);
+    color: var(--dark-text-color);
     margin: 5%;
     font-size: 2.1rem;
 }
@@ -33,16 +33,16 @@ main ul li {
     align-items: space-around;
     justify-content: center;
     min-height: 400px;
-    border: 3px solid var(--primary);
+    border: 3px solid var(--primary-color);
     border-radius: 10px;
-    background-color: var(--primary);
-    color: var(--white);
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
 }
 
 main ul li:hover {
     transition: .5s;
-    background-color: var(--white);
-    color: var(--primary);
+    background-color: var(--light-color);
+    color: var(--primary-color);
 }
 
 main ul li section {
@@ -69,16 +69,16 @@ main ul li section img {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    color: var(--primary-color);
 }
 
 .icons div {
     display: flex;
     align-items: center;
-
 }
 
 .icons div a {
-    color: var(--primary);
+    color: var(--primary-color);
     margin-left: 10px;
     font-weight: 500;
 }
