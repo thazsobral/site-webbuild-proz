@@ -1,5 +1,7 @@
 {
     "recommendations": [
-        "akamud.vscode-javascript-snippet-pack"
+        "akamud.vscode-javascript-snippet-pack",
+        "tomoki1207.pdf",
+        "cweijan.vscode-database-client2"
     ]
 }
