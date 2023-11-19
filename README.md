@@ -10,7 +10,17 @@ Projeto desenvolvido durante o curso da proz na trilha de front-end.
 
 ### Sprint 1
 ### Sprint 2
-### Sprint 3
+### Sprint 3 - Telas
+- **Desenvolvimento**:
+    - [x] Estilização das 5 telas (idealmente) criadas anteriormente em HTML;
+    - [x] Implementar um design com a manipulação do modelo de caixa dos elementos, além de tamanhos e cores das fontes;
+    - [x] Tentar implementar o uso de flex-box em ao menos uma das telas;
+- **Organização**:
+    - [x] Uso do Github para gestão do projeto;
+    - [x] Uso do Discord para comunicação da equipe;
+- **Apresentação**:
+    - [x] O projeto deve apresentar um design intuitivo, claro e objetivo, pensando na experiência do usuário;
+    - [x] O site deve ter pelo menos dois formulários com validações. Entrega: 24/10/2023;
 ### Sprint 4 - Renderização dinâmica e validação de formulários
 - **Desenvolvimento**:
     - [x] Manipulação da DOM via JS;
@@ -34,4 +44,4 @@ Projeto desenvolvido durante o curso da proz na trilha de front-end.
     - [x] Uso do Discord para comunicação da equipe.
 - **Apresentação**:
     - [ ] Construir a apresentação do pitch pela equipe;
-    - [ ] Submeter o projeto para avaliação final. Entrega: 23/11
+    - [ ] Submeter o projeto para avaliação final. Entrega: 23/11/2023
