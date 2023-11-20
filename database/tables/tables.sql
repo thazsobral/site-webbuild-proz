@@ -1,4 +1,3 @@
-use xlmuwhvi;
 -- COLABORES --
 CREATE TABLE colaboradores 
 ( 
@@ -15,8 +14,7 @@ CREATE TABLE links_colaboradores
  link_github VARCHAR(100),  
  link_likedin VARCHAR(100),  
  link_facebook VARCHAR(100),  
- id_colaboradores INT
-
+ id_colaboradores INT,
  CONSTRAINT fk_links_id_colaboradores FOREIGN KEY(id_colaboradores) REFERENCES colaboradores (id)
 );
 -- PROJETOS--
@@ -26,7 +24,6 @@ CREATE TABLE projetos
  tamb VARCHAR(100) NOT NULL,  
  nome VARCHAR(25) NOT NULL,  
  exibido_portifolio CHAR(1) NOT NULL DEFAULT 'S',
-
  UNIQUE (tamb)
 ); 
 -- COLABORADOR PARTICIPA PROJETOS --
@@ -35,7 +32,6 @@ CREATE TABLE colaborador_participa_projeto
  id_colaboradores INT, 
  id_projetos INT,  
  funcao_colaborador VARCHAR(25) NOT NULL,
-
  PRIMARY key (id_colaboradores, id_projetos),
  CONSTRAINT fk_id_projetos FOREIGN KEY (id_projetos) REFERENCES projetos (id),
  CONSTRAINT fk_id_colaboradores FOREIGN KEY (id_colaboradores) REFERENCES colaboradores (id)
@@ -52,39 +48,32 @@ CREATE TABLE contatos
 CREATE TABLE telefones
 ( 
  id INT PRIMARY KEY,  
- id_usuario INT,  
+ id_contato INT,  
  telefone VARCHAR(11) NOT NULL,  
  CHECK (telefone <> 'undefined'),
-
  UNIQUE (telefone),
- CONSTRAINT fk_telefone_id_contato FOREIGN KEY(id_usuario) REFERENCES contatos (id)
+ CONSTRAINT fk_telefone_id_contato FOREIGN KEY(id_contato) REFERENCES contatos (id)
 );
-
-
-
 -- EMAILS CONTATOS --
 CREATE TABLE emails
 ( 
  id INT PRIMARY KEY,  
- id_usuario INT,  
- email VARCHAR(n) NOT NULL,  
+ id_contato INT,  
+ email VARCHAR(50) NOT NULL,  
  CHECK (email = 'undefined'),
- UNIQUE (email)
+ UNIQUE (email),
+ CONSTRAINT fk_email_id_contato FOREIGN KEY(id_contato) REFERENCES contatos (id)
 ); 
-
-ALTER TABLE email ADD FOREIGN KEY(id_usuario) REFERENCES contatos (id_usuario)
 -- MENSAGENS CONTATOS --
 CREATE TABLE mensagens 
 ( 
- id INT PRIMARY KEY AUTO_INCREMENT,  
- mensagem VARCHAR(n),  
+ id INT PRIMARY KEY,  
+ mensagem VARCHAR(250),  
  assunto INT,  
- data_hora_recebimento DATE NOT NULL,  
- idcontatos INT,  
-); 
-
-
-ALTER TABLE mensagens ADD FOREIGN KEY(idcontatos) REFERENCES colaboradores (idcontatos)
+ data_hora_recebimento DATE NOT NULL DEFAULT NOW(),  
+ id_contato INT,
+ CONSTRAINT fk_mensagens_id_contatos FOREIGN KEY(id_contato) REFERENCES contatos (id) 
+);
 -- PARCEIROS --
 CREATE TABLE parceiros 
 ( 
