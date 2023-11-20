@@ -1,7 +1,7 @@
 -- COLABORES --
 CREATE TABLE colaboradores 
 ( 
- id INT PRIMARY KEY,  
+ id SERIAL PRIMARY KEY,  
  ativo VARCHAR(1) NOT NULL,  
  bio VARCHAR(100) NOT NULL,  
  cargo VARCHAR(25) NOT NULL,  
@@ -10,7 +10,7 @@ CREATE TABLE colaboradores
 -- LINKS COLABORADORES --
 CREATE TABLE links_colaboradores 
 ( 
- id INT PRIMARY KEY,  
+ id SERIAL PRIMARY KEY,  
  link_github VARCHAR(100),  
  link_likedin VARCHAR(100),  
  link_facebook VARCHAR(100),  
@@ -20,7 +20,7 @@ CREATE TABLE links_colaboradores
 -- PROJETOS--
 CREATE TABLE projetos 
 ( 
- id INT PRIMARY KEY,  
+ id SERIAL PRIMARY KEY,  
  tamb VARCHAR(100) NOT NULL,  
  nome VARCHAR(25) NOT NULL,  
  exibido_portifolio CHAR(1) NOT NULL DEFAULT 'S',
@@ -39,7 +39,7 @@ CREATE TABLE colaborador_participa_projeto
 -- CONTATOS --
 CREATE TABLE contatos 
 ( 
- id INT PRIMARY KEY,  
+ id SERIAL PRIMARY KEY,  
  nome VARCHAR(25) NOT NULL,  
  inscrito_newsletter CHAR(1) NOT NULL DEFAULT 'N',  
  ativo CHAR(1) NOT NULL DEFAULT 'S'
@@ -47,7 +47,7 @@ CREATE TABLE contatos
 -- TELEFONES CONTATOS --
 CREATE TABLE telefones
 ( 
- id INT PRIMARY KEY,  
+ id SERIAL PRIMARY KEY,  
  id_contato INT,  
  telefone VARCHAR(11) NOT NULL,  
  CHECK (telefone <> 'undefined'),
@@ -57,28 +57,28 @@ CREATE TABLE telefones
 -- EMAILS CONTATOS --
 CREATE TABLE emails
 ( 
- id INT PRIMARY KEY,  
+ id SERIAL PRIMARY KEY,  
  id_contato INT,  
  email VARCHAR(50) NOT NULL,  
- CHECK (email = 'undefined'),
+ CHECK (email <> 'undefined'),
  UNIQUE (email),
  CONSTRAINT fk_email_id_contato FOREIGN KEY(id_contato) REFERENCES contatos (id)
 ); 
 -- MENSAGENS CONTATOS --
 CREATE TABLE mensagens 
 ( 
- id INT PRIMARY KEY,  
+ id SERIAL PRIMARY KEY,  
  mensagem VARCHAR(250),  
- assunto INT,  
- data_hora_recebimento DATE NOT NULL DEFAULT NOW(),  
+ assunto VARCHAR(50),  
+ data_hora_recebimento TIMESTAMP NOT NULL DEFAULT NOW(),  
  id_contato INT,
  CONSTRAINT fk_mensagens_id_contatos FOREIGN KEY(id_contato) REFERENCES contatos (id) 
 );
 -- PARCEIROS --
 CREATE TABLE parceiros 
 ( 
- nome VARCHAR(n) NOT NULL,  
- id INT PRIMARY KEY AUTO_INCREMENT,  
- exibido_site CHAR(n) NOT NULL DEFAULT 'S',  
- ativo CHAR(n) NOT NULL DEFAULT 'S',  
+ id SERIAL PRIMARY KEY,  
+ nome VARCHAR(25) NOT NULL,  
+ exibido_site CHAR(1) NOT NULL DEFAULT 'S',  
+ ativo CHAR(1) NOT NULL DEFAULT 'S'
 ); 
