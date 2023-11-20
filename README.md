@@ -7,8 +7,16 @@ Projeto desenvolvido durante o curso da proz na trilha de front-end.
 - [Layout do projeto](https://www.figma.com/file/OPgbNFsQkHUClDQw00FkZG/Proz?type=design&node-id=0%3A1&mode=design&t=AEipn6YDXd99g1cP-1)
 
 ## Entregas
-
-### Sprint 1
+### Sprint 1 - Layout
+- **Desenvolvimento**:
+    - [x] Desenvolver o layout de pelo menos 5 telas do site, uma vez que cada grupo terá em média 5 integrantes;
+    - [x] Criar repositório remoto com todos os colaboradores do grupo com as referências do layout, que pode ser feito desde à mão até figma;
+- **Organização**:
+    - [x] Uso do Github para gestão do projeto;
+    - [x] Uso do Discord para comunicação da equipe;
+- **Apresentação**:
+    - [x] O projeto deve apresentar as 5 telas relacionadas ao tema do projeto;
+    - [x] O projeto deve apresentar os as funcionalidades definidas pelas regras de negócio do tema proposto.
 ### Sprint 2
 ### Sprint 3 - Telas
 - **Desenvolvimento**:
