@@ -2,6 +2,7 @@
     "recommendations": [
         "akamud.vscode-javascript-snippet-pack",
         "tomoki1207.pdf",
-        "cweijan.vscode-database-client2"
+        "cweijan.vscode-database-client2",
+        "ritwickdey.liveserver"
     ]
 }
