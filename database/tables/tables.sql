@@ -1,84 +1,81 @@
--- COLABORES --
 CREATE TABLE colaboradores 
 ( 
  id SERIAL PRIMARY KEY,  
- ativo VARCHAR(1) NOT NULL,  
- bio VARCHAR(100) NOT NULL,  
+ ativo CHAR(1) NOT NULL DEFAULT 'S',  
+ bio VARCHAR(250) NOT NULL,  
  cargo VARCHAR(25) NOT NULL,  
- nome VARCHAR(25) 
-);
--- LINKS COLABORADORES --
-CREATE TABLE links_colaboradores 
-( 
- id SERIAL PRIMARY KEY,  
- link_github VARCHAR(100),  
- link_likedin VARCHAR(100),  
- link_facebook VARCHAR(100),  
- id_colaboradores INT,
- CONSTRAINT fk_links_id_colaboradores FOREIGN KEY(id_colaboradores) REFERENCES colaboradores (id)
-);
--- PROJETOS--
+ nome VARCHAR(25) NOT NULL
+); 
+
 CREATE TABLE projetos 
 ( 
  id SERIAL PRIMARY KEY,  
- tamb VARCHAR(100) NOT NULL,  
+ tamb VARCHAR(250) NOT NULL,
  nome VARCHAR(25) NOT NULL,  
- exibido_portifolio CHAR(1) NOT NULL DEFAULT 'S',
- UNIQUE (tamb)
+ exibido_portifolio CHAR(1) NOT NULL DEFAULT 'S',  
+ id_cliente INT
 ); 
--- COLABORADOR PARTICIPA PROJETOS --
-CREATE TABLE colaborador_participa_projeto 
-( 
- id_colaboradores INT, 
- id_projetos INT,  
- funcao_colaborador VARCHAR(25) NOT NULL,
- PRIMARY key (id_colaboradores, id_projetos),
- CONSTRAINT fk_id_projetos FOREIGN KEY (id_projetos) REFERENCES projetos (id),
- CONSTRAINT fk_id_colaboradores FOREIGN KEY (id_colaboradores) REFERENCES colaboradores (id)
-); 
--- CONTATOS --
+
 CREATE TABLE contatos 
 ( 
  id SERIAL PRIMARY KEY,  
  nome VARCHAR(25) NOT NULL,  
  inscrito_newsletter CHAR(1) NOT NULL DEFAULT 'N',  
  ativo CHAR(1) NOT NULL DEFAULT 'S'
-);
--- TELEFONES CONTATOS --
-CREATE TABLE telefones
-( 
- id SERIAL PRIMARY KEY,  
- id_contato INT,  
- telefone VARCHAR(11) NOT NULL,  
- CHECK (telefone <> 'undefined'),
- UNIQUE (telefone),
- CONSTRAINT fk_telefone_id_contato FOREIGN KEY(id_contato) REFERENCES contatos (id)
-);
--- EMAILS CONTATOS --
-CREATE TABLE emails
-( 
- id SERIAL PRIMARY KEY,  
- id_contato INT,  
- email VARCHAR(50) NOT NULL,  
- CHECK (email <> 'undefined'),
- UNIQUE (email),
- CONSTRAINT fk_email_id_contato FOREIGN KEY(id_contato) REFERENCES contatos (id)
 ); 
--- MENSAGENS CONTATOS --
+
 CREATE TABLE mensagens 
 ( 
  id SERIAL PRIMARY KEY,  
  mensagem VARCHAR(250),  
- assunto VARCHAR(50),  
+ assunto INT,  
  data_hora_recebimento TIMESTAMP NOT NULL DEFAULT NOW(),  
- id_contato INT,
- CONSTRAINT fk_mensagens_id_contatos FOREIGN KEY(id_contato) REFERENCES contatos (id) 
-);
--- PARCEIROS --
-CREATE TABLE parceiros 
+ id_contato INT
+); 
+
+CREATE TABLE clientes 
+( 
+ nome VARCHAR(25) NOT NULL,  
+ id SERIAL PRIMARY KEY,  
+ exibido_site CHAR(1) NOT NULL DEFAULT 'S',
+ ativo CHAR(1) NOT NULL DEFAULT 'S'  
+); 
+
+CREATE TABLE participa 
+( 
+ id_colaborador INT,  
+ id_projeto INT,  
+ funcao_colaborador VARCHAR(25) NOT NULL,
+ CONSTRAINT pk_participa PRIMARY KEY(id_colaborador, id_projeto)
+); 
+
+CREATE TABLE links_colaboradores 
 ( 
  id SERIAL PRIMARY KEY,  
- nome VARCHAR(25) NOT NULL,  
- exibido_site CHAR(1) NOT NULL DEFAULT 'S',  
- ativo CHAR(1) NOT NULL DEFAULT 'S'
+ link_github VARCHAR(25),  
+ link_linkedin VARCHAR(25),  
+ link_facebook VARCHAR(25),  
+ id_colaborador INT
 ); 
+
+CREATE TABLE emails_contatos 
+( 
+ id SERIAL PRIMARY KEY,  
+ email VARCHAR(25) NOT NULL,  
+ id_contato INT
+); 
+
+CREATE TABLE telefones_contatos 
+( 
+ id SERIAL PRIMARY KEY,  
+ telefone INT,  
+ id_contato INT  
+); 
+
+ALTER TABLE projetos ADD FOREIGN KEY(id_cliente) REFERENCES clientes (id);
+ALTER TABLE mensagens ADD FOREIGN KEY(id_contato) REFERENCES contatos (id);
+ALTER TABLE participa ADD FOREIGN KEY(id_colaborador) REFERENCES colaboradores (id);
+ALTER TABLE participa ADD FOREIGN KEY(id_projeto) REFERENCES projetos (id);
+ALTER TABLE links_colaboradores ADD FOREIGN KEY(id_colaborador) REFERENCES colaboradores (id);
+ALTER TABLE emails_contatos ADD FOREIGN KEY(id_contato) REFERENCES contatos (id);
+ALTER TABLE telefones_contatos ADD FOREIGN KEY(id_contato) REFERENCES contatos (id);
