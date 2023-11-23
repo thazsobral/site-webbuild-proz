@@ -1,14 +1,14 @@
 -- Inserir dados nas tabelas com valores atualizados
 -- Tabela colaboradores
 INSERT INTO colaboradores (ativo, bio, cargo, nome) VALUES
-('S', 'Entusiasta da tecnologia, sempre em busca da próxima inovação. Transformando linhas de código em soluções extraordinárias.', 'Desenvolvedor', 'João Silva'),
+('S', 'Entusiasta da tecnologia, sempre em busca da próxima inovação. Transformando linhas de código em soluções extraordinárias.', 'Analista de Sistemas', 'João Silva'),
 ('S', 'Designer apaixonado por criar experiências visuais que contam histórias. Transformando ideias em designs incríveis.', 'Designer', 'Maria Oliveira'),
-('S', 'Analista de dados curioso, explorando o universo dos dados para descobrir insights ocultos. Transformando números em conhecimento.', 'Analista', 'Carlos Santos'),
+('S', 'Analista de dados curioso, explorando o universo dos dados para descobrir insights ocultos. Transformando números em conhecimento.', 'Analista de Sistemas', 'Carlos Santos'),
 ('S', 'Líder nato e gerente de projetos apaixonado por motivar equipes. Transformando desafios em oportunidades de crescimento.', 'Gerente', 'Ana Souza'),
-('S', 'Formado em Processos Gerenciais e com vários cursos na área de tecnologia, desde ferramentas cotidianas, a linguagens de programação, tendo o foco no desenvolvimento front-end com o uso de HTML/CSS/JS.', 'Programador', 'Tayrone Machado'),
-('S', 'Pai, entusiasta de tecnologia, programador e viciado em resolver problemas. Possuo conhecimento em técnologias front-end e back-end, além de ter experiência com diversas ferramentas de desenvolvimento.', 'Programador', 'Thalles Sobral'),
-('S', 'Desde quando eu era mais jovem, trabalhava para atender com excelência todos os tipos de clientes, me formei em técnico de manutenção e suporte em informática, subi de cargo como coordenador, e hoje atuo como gerente operacional.', 'Programador', 'Bruno Alves'),
-('S', 'Programador apaixonado por resolver problemas complexos. Transformando linhas de código em soluções elegantes e eficientes.', 'Programador', 'Eduardo Veiga');
+('S', 'Formado em Processos Gerenciais e com vários cursos na área de tecnologia, desde ferramentas cotidianas, a linguagens de programação, tendo o foco no desenvolvimento front-end com o uso de HTML/CSS/JS.', 'Analista de Sistemas', 'Tayrone Machado'),
+('S', 'Pai, entusiasta de tecnologia, programador e viciado em resolver problemas. Possuo conhecimento em técnologias front-end e back-end, além de ter experiência com diversas ferramentas de desenvolvimento.', 'Analista de Sistemas', 'Thalles Sobral'),
+('S', 'Desde quando eu era mais jovem, trabalhava para atender com excelência todos os tipos de clientes, me formei em técnico de manutenção e suporte em informática, subi de cargo como coordenador, e hoje atuo como gerente operacional.', 'Analista de Sistemas', 'Bruno Alves'),
+('S', 'Programador apaixonado por resolver problemas complexos. Transformando linhas de código em soluções elegantes e eficientes.', 'Analista de Sistemas', 'Eduardo Veiga');
 
 -- Tabela projetos
 INSERT INTO projetos (tamb, nome, exibido_portifolio, id_cliente) VALUES
@@ -49,12 +49,12 @@ INSERT INTO clientes (nome, exibido_site, ativo) VALUES
 
 -- Tabela participa
 INSERT INTO participa (id_colaborador, id_projeto, funcao_colaborador) VALUES
-(1, 1, 'Desenvolvedor'),
-(2, 2, 'Designer'),
-(3, 1, 'Analista'),
-(4, 3, 'Gerente'),
-(5, 2, 'Programador'),
-(1, 3, 'Desenvolvedor');
+(1, 1, 'Front-end'),
+(2, 2, 'UX/UI'),
+(3, 1, 'DevOps'),
+(4, 3, 'Project Management'),
+(5, 2, 'Front-end'),
+(1, 3, 'Back-end');
 
 -- Tabela links_colaboradores
 INSERT INTO links_colaboradores (link_github, link_linkedin, link_facebook, id_colaborador) VALUES
