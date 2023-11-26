@@ -22,7 +22,17 @@ const funcionarios = [
         github: "BrunoAlves95",
         linkedin: "bruno-alves-cordeiro",
         facebook: "bruno.alvescordeiro"
+    },
+    {
+        img: "foto-edu.jpg",
+        altImage: "foto do membro",
+        bio: "Estudante de Gestão de TI na Anhanguera, amador da area de TI desde a infância, resolvi assumir a postura tecnológica durante a pandemia, comecei a faculdade e uma coleção de certificados de cursos, tendo hoje mais de 20 certificações. Levo como bagagem para esse novo mercado experiencia em Adm. de 16 anos e boa “esgrima” comunicativa.",
+        github: "EduardoZabeuVeiga",
+        linkedin: "EduardoZabeuVeiga",
+        facebook: "EduardoZabeuVeiga"
     }
+
+
 ];
 
 function populatePage() {
