@@ -46,10 +46,16 @@ Projeto desenvolvido durante o curso da proz na trilha de front-end.
     - [x] Criar as tabelas na 3FN em um banco de dados com informações de teste;
     - [x] Realizar consultas simples, se possível, juntando tabelas.
 - **Organização**:
-    - [ ] Uso de recursos de apresentação (slides, demonstração de uso do app, etc);
+    - [x] Uso de recursos de apresentação (slides, demonstração de uso do app, etc);
     - [x] Uso do Git;
     - [x] Uso do SQL;
     - [x] Uso do Discord para comunicação da equipe.
 - **Apresentação**:
-    - [ ] Construir a apresentação do pitch pela equipe;
-    - [ ] Submeter o projeto para avaliação final. Entrega: 23/11/2023
+    - [x] Construir a apresentação do pitch pela equipe;
+    - [x] Submeter o projeto para avaliação final. Entrega: 23/11/2023
+
+### Melhorias apontadas na apresentação final
+- [ ] header menor ou acrescentar mais coisas no header
+- [ ] melhorar a visibilidade do texto na página sobre
+- [ ] melhorar a distribuição da home
+- [ ] criar menu sanduíche na versão mobile
