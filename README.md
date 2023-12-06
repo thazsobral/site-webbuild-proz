@@ -59,3 +59,10 @@ Projeto desenvolvido durante o curso da proz na trilha de front-end.
 - [ ] melhorar a visibilidade do texto na página sobre
 - [ ] melhorar a distribuição da home
 - [ ] criar menu sanduíche na versão mobile
+
+### Dicas do professor
+- [ ] criar validações nos formulários. Por exemplo: no campo de telefone usar um pattern para validação
+- [ ] remover código comentados (limpeza de código é sempre bem-vinda)
+- [ ] revisar e corrigir relacionamentos das tabelas
+- [ ] criar mais perguntas para as consultas
+- [ ] corrigir consulta de colaboradores que não estão em nenhum projeto
